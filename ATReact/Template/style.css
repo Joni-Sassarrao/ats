@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+};
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-filho{
+    width: 470px;
+}   
+
+.Imagem img{
+    width: 30%;
+}
+
+.All-Cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+};
