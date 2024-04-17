@@ -1,11 +1,11 @@
-import Header from "../Componentes/Header"
-import HomePageInfo from "../Componentes/HomePageInfo"
+import ConteudoPrincipal from "../Componentes/ConteudoPrincipal"
+import Cards from "../Componentes/Cards";
 
 export default function Home(){
     return(
         <>
-        <Header/>
-        <HomePageInfo/>
+        <ConteudoPrincipal/>
+        <Cards/>
         </>
     );
 }

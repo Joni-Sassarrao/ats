@@ -1,12 +1,12 @@
-import Home from './Pages/Home'
 import {Outlet} from 'react-router-dom';
+import Header from './Componentes/Header';
 
 function App() {
 
   return (
     <>
-      <Home/>
-      <Outlet/>
+    <Header/>
+    <Outlet/>
     </>
   )
 }
