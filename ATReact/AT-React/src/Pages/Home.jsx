@@ -1,5 +1,11 @@
+import Header from "../Componentes/Header"
+import HomePageInfo from "../Componentes/HomePageInfo"
+
 export default function Home(){
     return(
-        <h1>Página principal</h1>
-    )
+        <>
+        <Header/>
+        <HomePageInfo/>
+        </>
+    );
 }
