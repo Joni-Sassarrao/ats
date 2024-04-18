@@ -1,7 +1,7 @@
-import yt from '../../../public/Ellipse-youtube.jpg'
-import tk from '../../../public/Ellipse-tiktok.jpg'
-import fb from '../../../public/Ellipse-facebook.jpg'
-import ig from '../../../public/Ellipse-instagram.jpg'
+import yt from '/public/Ellipse-youtube.jpg'
+import tk from '/public/Ellipse-tiktok.jpg'
+import fb from '/public/Ellipse-facebook.jpg'
+import ig from '/Ellipse-instagram.jpg'
 
 export default function Cards(){
     return(

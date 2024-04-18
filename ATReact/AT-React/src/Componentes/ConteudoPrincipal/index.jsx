@@ -9,7 +9,7 @@ export default function PageInfo(){
                 <h2>Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade.</h2>
                 <button>Começar agora!</button>
             </div>
-            <div className="Hero-Image">
+            <div>
                 <img src={hero} alt="Imagem-Home" />
             </div>
         </div>
