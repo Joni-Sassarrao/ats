@@ -3,11 +3,15 @@ import {Link} from "react-router-dom"
 export default function Header(){
     return(
         <>
-        <div className="Cabeca">
-            <Link to="/">Home</Link>
-            <Link to="sobre">Sobre</Link>
-            <Link to="contato">Contato</Link>
-        </div>
+        <header>
+            <nav>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="sobre">Sobre</Link></li>
+                    <li><Link to="contato">Contato</Link></li>
+                </ul>
+            </nav>
+        </header>
         </>
     )
 }
