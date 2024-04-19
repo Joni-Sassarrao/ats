@@ -62,3 +62,83 @@ nav ul li a:hover {
     margin-left: 100px;
     width: 80%;
 }
+
+.All-Cards{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.card-1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 309x;
+    background-color: #F1C2B0;
+    border-radius: 15px;
+}
+
+.card-1 p{
+    width: 200px;
+    font-size: 1rem;
+}
+
+.card-2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 309x;
+    background-color: #F9EB98;
+    border-radius: 15px;
+}
+
+.card-2 p{
+    width: 200px;
+    font-size: 1rem;
+}
+
+.card-3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 309x;
+    background-color: #C0D9DD;
+    border-radius: 15px;
+}
+
+.card-3 p{
+    width: 200px;
+    font-size: 1rem;
+}
+
+.card-4{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 309x;
+    background-color: #6975E8;
+    border-radius: 15px;
+}
+
+.card-4 p{
+    width: 200px;
+    font-size: 1rem;
+}
+
+.espaco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+
+.espaco img{
+    width: 10%;
+    height: 10%;
+    margin-top: 55px;
+}
+
+.espaco h1{
+    font-size: 4rem;
+    margin-bottom: 0px;
+    color: white;
+}
