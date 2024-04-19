@@ -1,8 +1,10 @@
+import ConteudoPrincipalSobre from "../Componentes/ConteudoPrincipalSobre"
+
 const Sobre = ()=>{
     return(
-        <div>
-            <h1>Sobre</h1>
-        </div>
+        <>
+        <ConteudoPrincipalSobre/>
+        </>
     )
 }
 
