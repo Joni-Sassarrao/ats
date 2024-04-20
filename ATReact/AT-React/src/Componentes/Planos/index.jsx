@@ -25,21 +25,27 @@ export default function Planos(){
                         <h1>Profissional - Times</h1>
                     </div>
                     <p>1 - 10 Usuários</p>
-                    <select className="profissionais-videos">
+                    <select className="profissional-videos">
                         <option>Vídeos Ilimitados R$40</option>
                     </select>
                     <p>+10 Usuários</p>
-                    <select className="profissionais-videos">
+                    <select className="profissional-videos">
                         <option>Vídeos Ilimitados R$20</option>
                     </select>
-                    <button>Cadastrar</button>
+                    <div className="botao-profissional">
+                        <button>Cadastrar</button>
+                    </div>
                 </div>
                 <div className="corporativo">
                     <div className="cabeca-profissional-corporativo">
-                        <h1>Corporatio</h1>
+                        <h1>Corporativo</h1>
                     </div>
-                    <img src={person} alt="" />
-                    <button>Entre Em Contato</button>
+                    <div className="corporativo-image">
+                        <img src={person} alt="" />
+                    </div>
+                    <div className="botao-corporativo">
+                        <button>Entre Em Contato</button>
+                    </div>
                 </div>
             </div>
         </div>
