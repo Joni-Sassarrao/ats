@@ -5,7 +5,7 @@ export default function ConteudoPrincipalSobre(){
     return(
         <>
         <div className="container-sobre">
-            <div className="container-filho-sobre">
+            <div className="container-sobre-filho">
                 <h1>Bem-Vindo à revolução dos vídeos!</h1>
                 <h2>Somos uma startup com o objetivo de facilitar a produção de conteúdo em larga escala com qualidade profissional, capaz de atingir uma audiência de milhões de seguidores.</h2>
                 <button>Baixe o app</button>

@@ -22,7 +22,7 @@ nav ul li a {
     color: gray;
     text-decoration: none;
 }
-  
+
 nav ul li a:hover {
     text-decoration: underline;
 }
@@ -30,7 +30,7 @@ nav ul li a:hover {
 .container{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-around;
     margin-top: 40px;
 }
 
@@ -67,7 +67,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 10px;
     margin-right: 25px;
 }
@@ -141,4 +141,118 @@ nav ul li a:hover {
     font-size: 4rem;
     margin-bottom: 0px;
     color: white;
+}
+
+.container-sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.container-sobre-filho{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin-left: 30px;
+    width: 400px;
+}
+
+.container-sobre-filho h1{
+    font-size: 4rem;
+}
+
+.container-sobre-filho h2{
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.container-sobre-filho button{
+    font-size: 1.1rem;
+    color: white;
+    width: 220px;
+    height: 40px;
+    background: #333333;
+    border-radius: 40px;
+}
+
+.telefones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.telefones img{
+    margin-right: 70px;
+}
+
+.fundo{
+    background-color: #F4F2F2;
+    height: 640px;
+}
+
+.plano-top{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.plano-top h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+.servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.individual{
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    width: 250px;
+    height: 400px;
+}
+
+.cabeca-individual{
+    display: flex;
+    justify-content: center;
+    background-color: #6975E8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cabeca-individual h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #131925;
+}
+
+.individual p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.individual select{
+    margin-left: 10px;
+    width: 220px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+}
+
+.individual button{
+    background-color: #6975E8;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.botao-individual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
 }

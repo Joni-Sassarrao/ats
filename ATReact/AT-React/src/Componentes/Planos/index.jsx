@@ -1,8 +1,12 @@
+import person from "/public/person-phone.png"
+
 export default function Planos(){
     return(
         <>
-        <div className="Fundo">
-            <h1>Planos</h1>
+        <div className="fundo">
+            <div className="plano-top">
+                <h1>Planos</h1>
+            </div>
             <div className="servicos">
                 <div className="individual">
                     <div className="cabeca-individual">
@@ -11,10 +15,10 @@ export default function Planos(){
                     <p>1 Usuário</p>
                     <select name="individual-videos">
                         <option>10 vídeos R$15</option>
-                        <option>20 vídeos R$30</option>
-                        <option>30 vídeos R$45</option>
                     </select>
-                    <button>Cadastrar</button>
+                    <div className="botao-individual">
+                        <button>Cadastrar</button>
+                    </div>
                 </div>
                 <div className="profissional">
                     <div className="cabeca-profissional-corporativo">
@@ -25,8 +29,17 @@ export default function Planos(){
                         <option>Vídeos Ilimitados R$40</option>
                     </select>
                     <p>+10 Usuários</p>
-                    <select className="profissionais-videos">Vídeos Ilimitados R$20</select>
+                    <select className="profissionais-videos">
+                        <option>Vídeos Ilimitados R$20</option>
+                    </select>
                     <button>Cadastrar</button>
+                </div>
+                <div className="corporativo">
+                    <div className="cabeca-profissional-corporativo">
+                        <h1>Corporatio</h1>
+                    </div>
+                    <img src={person} alt="" />
+                    <button>Entre Em Contato</button>
                 </div>
             </div>
         </div>
