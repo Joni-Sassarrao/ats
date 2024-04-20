@@ -1,8 +1,10 @@
+import ConteudoPrincipalContato from "../Componentes/ConteudoPrincipalContato"
+
 const Contato = ()=>{
     return(
-        <div>
-            <h1>Contato</h1>
-        </div>
+        <>
+        <ConteudoPrincipalContato/>
+        </>
     )
 }
 

@@ -1,4 +1,4 @@
-import person from "/public/person-phone.png"
+import person from "/person-phone.png"
 
 export default function Planos(){
     return(

@@ -215,6 +215,7 @@ nav ul li a:hover {
     border-radius: 20px 20px 0px 0px;
     width: 250px;
     height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 .cabeca-individual{
@@ -268,6 +269,7 @@ nav ul li a:hover {
     border-radius: 20px 20px 0px 0px;
     width: 250px;
     height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 .cabeca-profissional-corporativo{
@@ -294,7 +296,7 @@ nav ul li a:hover {
 .profissional-videos{
     margin-left: 10px;
     width: 220px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: 20px;
     box-shadow: 0 0 2px;   
 }
@@ -320,6 +322,7 @@ nav ul li a:hover {
     border-radius: 20px 20px 0px 0px;
     width: 250px;
     height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 .corporativo-image{
@@ -337,7 +340,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 65px;
+    margin-top: 67px;
 }
 
 .corporativo button{
@@ -347,4 +350,119 @@ nav ul li a:hover {
     border-radius: 10px;
     font-size: 1.2rem;
     border: solid 1px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.contato-logo{
+    width: 450px;
+    margin-left: 200px;
+}
+
+.contato-logo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.contato-imagens{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contato-imagens img{
+    padding-right: 80px;
+}
+
+.linha-vertical{
+    width: 1px;
+    height: 630px;
+    border: none;
+    background-color: gray;
+}
+
+.contato form{
+    margin-right: 200px;
+}
+
+.form-nome{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.form-nome input{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 2rem;
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.form-email{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.form-email input{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 2rem;
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.form-msg{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.form-msg textarea{
+    font-size: 1rem;
+    width: 630px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    resize: none;
+}
+
+.form-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contato button{
+    margin-top: 50px;
+    background-color: #6975E8;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.pagina-nao-encontrada{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagina-nao-encontrada h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
 }

@@ -1,4 +1,4 @@
-import hero from '/public/Hero-image.png'
+import hero from '/Hero-image.png'
 
 export default function PageInfo(){
     return(
