@@ -302,6 +302,7 @@ nav ul li a:hover {
 }
 
 .profissional button{
+    background-color: white;
     color: black;
     width: 200px;
     height: 30px;
@@ -344,6 +345,7 @@ nav ul li a:hover {
 }
 
 .corporativo button{
+    background-color: white;
     color: black;
     width: 200px;
     height: 30px;
