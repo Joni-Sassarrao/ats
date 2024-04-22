@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      AT-Ionic ex: 15
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-text>Pense em um dos animais abaixo e responda as perguntas para o código adivinhar o animal</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-text>Macaco || Cachorro || Gato || Girafa || Gorila || Leão || Urso || Pássaro || Gávião</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal anda com 4 patas?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaPata">
+      <ion-radio value="s-pata">Sim</ion-radio><br />
+      <ion-radio value="n-pata">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal é carnívoro?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaCarne">
+      <ion-radio value="s-carne">Sim</ion-radio><br />
+      <ion-radio value="n-carne">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal tem garras afiadas?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaGarra">
+      <ion-radio value="s-garra">Sim</ion-radio><br />
+      <ion-radio value="n-garra">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal é doméstico?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaDome">
+      <ion-radio value="s-dome">Sim</ion-radio><br />
+      <ion-radio value="n-dome">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal é flexível?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaFlex">
+      <ion-radio value="s-flex">Sim</ion-radio><br />
+      <ion-radio value="n-flex">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal tem cauda?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaCauda">
+      <ion-radio value="s-cauda">Sim</ion-radio><br />
+      <ion-radio value="n-cauda">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal tem um pescoço grande?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaPesc">
+      <ion-radio value="s-pesc">Sim</ion-radio><br />
+      <ion-radio value="n-pesc">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal vive na savana?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaSava">
+      <ion-radio value="s-sava">Sim</ion-radio><br />
+      <ion-radio value="n-sava">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal vive na floresta?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaFlor">
+      <ion-radio value="s-flor">Sim</ion-radio><br />
+      <ion-radio value="n-flor">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal voa?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaVoa">
+      <ion-radio value="s-voa">Sim</ion-radio><br />
+      <ion-radio value="n-voa">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal é um bom caçador?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaCaca">
+      <ion-radio value="s-caca">Sim</ion-radio><br />
+      <ion-radio value="n-caca">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>Seu animal tem um bico?</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-radio-group [(ngModel)]="radioSelecionadaBico">
+      <ion-radio value="s-bico">Sim</ion-radio><br />
+      <ion-radio value="n-bico">Não</ion-radio><br />
+    </ion-radio-group>
+  </ion-item>
+  <ion-button expand="block" (click)="adivinharAnimal()">Adivinhar animal</ion-button>
+</ion-content>
