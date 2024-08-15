@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import data from '../../artigos.json'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 
-
 export default function Home(){
 
     const [filmes, setFilmes] = useState([])
+
+    const setinha =  React.useRef(null);
 
     const settings = {
         infinite:true,
@@ -27,17 +29,22 @@ export default function Home(){
 
     return(
         <>
-        <h1>Home</h1>
-        <div className='flex justify-center'>
-            <Slider {...settings} className='flex flex-row w-[70%]'>
+        <div className='flex wrap justify-center mt-[80px]'>
+            <div className='flex items-center'>
+                <button className='font-fira text-2xl' onClick={() => setinha?.current?.slickPrev()}>{'<--'}</button>
+            </div>
+            <Slider arrows={false} ref={setinha} {...settings} className='flex flex-row w-[70%]'>
                 {filmes.map(filme =>(
-                    <div key={filme.id}>
+                    <div className='ml-[55px]' key={filme.id}>
                         <img src={`https://image.tmdb.org/t/p/w200/${filme.poster_path}`} alt={filme.title}/>
                         <h1 className='w-[188px] flex justify-center'>{filme.title}</h1>
-                        <Link to={`/${filme.id}`}>Detalhes do Filme</Link>
+                        <Link className='w-[188px] flex justify-center' to={`/${filme.id}`}>Detalhes do Filme</Link>
                     </div>
                 ))}
             </Slider>
+            <div className='flex items-center'>
+                <button className='font-fira text-2xl' onClick={() => setinha?.current?.slickNext()}>{'-->'}</button>
+            </div>
         </div>
         </>
     )
