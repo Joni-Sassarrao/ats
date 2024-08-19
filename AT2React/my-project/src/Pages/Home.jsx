@@ -36,13 +36,12 @@ export default function Home(){
             <Slider arrows={false} ref={setinha} {...settings} className='flex flex-row w-[70%]'>
                 {filmes.map(filme =>(
                     <div className='ml-[55px]' key={filme.id}>
-                        <img src={`https://image.tmdb.org/t/p/w200/${filme.poster_path}`} alt={filme.title}/>
-                        <h1 className='w-[188px] flex justify-center'>{filme.title}</h1>
+                        <img className='rounded-md' src={`https://image.tmdb.org/t/p/w200/${filme.poster_path}`} alt={filme.title}/>
                         <Link className='w-[188px] flex justify-center' to={`/${filme.id}`}>Detalhes do Filme</Link>
                     </div>
                 ))}
             </Slider>
-            <div className='flex items-center'>
+            <div className='flex items-center relative'>
                 <button className='font-fira text-2xl' onClick={() => setinha?.current?.slickNext()}>{'-->'}</button>
             </div>
         </div>
