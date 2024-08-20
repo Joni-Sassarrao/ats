@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import data from '../../artigos.json'
 import data2 from '../../destaques.json'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
