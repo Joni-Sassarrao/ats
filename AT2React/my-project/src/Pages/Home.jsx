@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import data2 from '../../destaques.json'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
+import { BiSearchAlt2 } from "react-icons/bi"
 
 export default function Home(){
 
     const [filmes, setFilmes] = useState([])
-
+    
     const setinha =  React.useRef(null);
-
+    
     const settings = {
         infinite:true,
         speed: 250,
@@ -27,20 +28,42 @@ export default function Home(){
         .catch(error => console.log(error))
     },[]) 
 
+    const [searchInput, setsearchInput] = useState('')
+    const [artigos, setArtigos] = useState(filmes)
+
+    const handleInputChange = e => {
+
+        const searchTerm = e.target.value
+        setsearchInput(searchTerm)
+
+        const resultados = filmes.filter((search) => (
+            search.title.toLowerCase().includes(searchTerm.toLowerCase())
+        ))
+        console.log(resultados)
+        setArtigos(resultados)
+    }
+
     return(
         <>
+        <form className="flex items-center justify-center">
+            <input className="border rounded-2xl ml-3 text-lg bg-black text-white p-[0.3rem]" type="text" placeholder="Busque um filme" id="search" value={searchInput} onChange={handleInputChange}/>
+            <button type="submit" className="border p-[2px] text-[30px] ml-2 rounded-lg text-white duration-300 hover:bg-white hover:text-black"><BiSearchAlt2/></button>
+        </form>
         <h1 className="flex justify-center text-3xl text-white mt-8">Novidades no Mundo dos Filmes!</h1>
         <div className='flex wrap justify-center mt-10 bg-gradient-to-b from-black to bg-red-700'>
             <div className='flex items-center'>
                 <button className='font-fira text-2xl text-white' onClick={() => setinha?.current?.slickPrev()}>{'<--'}</button>
             </div>
             <Slider arrows={false} ref={setinha} {...settings} className='flex flex-row w-[70%] rounded-lg p-10'>
-                {filmes.map(filme =>(
+                {artigos.length > 0 ? (
+                    artigos.map((filme) =>(
+                        <>
                     <div className='ml-[55px]' key={filme.id}>
                         <img className='rounded-md border' src={`https://image.tmdb.org/t/p/w200/${filme.poster_path}`} alt={filme.title}/>
                         <Link className='hover:bg-stone-800 hover:duration-200 bg-black text-white rounded-lg border w-[203px] flex justify-center mt-[20px]' to={`/${filme.id}`}>Detalhes do Filme</Link>
                     </div>
-                ))}
+                    </>
+                ))):(<p className='text-white font-Montserrat'>Filme não encontrado</p>)}
             </Slider>
             <div className='flex items-center'>
                 <button className='font-fira text-2xl text-white' onClick={() => setinha?.current?.slickNext()}>{'-->'}</button>
