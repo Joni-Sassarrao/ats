@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'fira' : ['Fira Code', 'monospace']
+      'fira' : ['Fira Code', 'monospace'],
+      'Montserrat': ['Montserrat', 'sans-serif;']
     },
     extend: {},
   },

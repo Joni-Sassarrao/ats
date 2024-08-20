@@ -14,7 +14,7 @@ export default function DetalhesFilme() {
     },[])
     return (
         <>
-        <h1 className="bg-white">SEXO GOSTOSO</h1>
+        <h1 className="bg-white">jhuyiybh</h1>
         </> 
     )
 }
