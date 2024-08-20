@@ -7,7 +7,7 @@ export default function NavBar(){
             <ul className="flex gap-3 text-3xl">
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="filmes">Filmes</NavLink></li>
-                <li><NavLink to="sobre">Sobre</NavLink></li>
+                <li><NavLink to="Contato">Contato</NavLink></li>
             </ul>
         </nav>
         </>
